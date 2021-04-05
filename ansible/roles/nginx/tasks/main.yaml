@@ -1,0 +1,10 @@
+---
+- name: nginx installed
+  yum:
+    name: nginx
+    state: latest
+- name: nginx running
+  systemd:
+    state: started
+    name: nginx
+    
